@@ -30,7 +30,9 @@ public class ChatScript : NetworkBehaviour
     public void Send()
     {
         if (string.IsNullOrWhiteSpace(chatInput.text))
+        {
             return;
+        }
 
         if (!IsClient)
         {
